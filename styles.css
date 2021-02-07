@@ -1,0 +1,60 @@
+/* Variables */
+
+:root {
+  /* Colors */
+  --color-darkcyan: hsl(185, 75%, 39%);
+  --color-verydarkdesaturatedblue: hsl(229, 23%, 23%);
+  --color-darkgrayishblue: hsl(227, 10%, 46%);
+  --color-darkgrey: hsl(0, 0%, 59%);
+
+  /* screen width */
+  --pc-size: 1440px;
+  --mobile-size: 375px;
+}
+
+/* Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  color: var(--color-darkgrayishblue);
+  background: var(--color-darkcyan);
+  box-sizing: border-box;
+}
+
+.pattern {
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  height: auto;
+}
+
+.pattern-top {
+  top: -70%;
+  left: -20%;
+}
+
+.pattern-bottom {
+  bottom: -70%;
+  right: -20%;
+}
+
+/* misc */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
