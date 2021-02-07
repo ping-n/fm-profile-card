@@ -49,6 +49,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("./images/bg-pattern-top.svg") bottom 50vh right 50vw
+      no-repeat,
+    url("./images/bg-pattern-bottom.svg") top 50vh left 50vw no-repeat,
+    var(--color-darkcyan);
 
   transition: all 0.3s ease;
 }
@@ -128,24 +132,6 @@ body {
   font-size: 1.4rem;
 }
 
-/* Background pattern */
-.pattern {
-  position: absolute;
-  z-index: -10;
-  max-width: 100%;
-  height: auto;
-}
-
-.pattern-top {
-  top: -75%;
-  left: -20%;
-}
-
-.pattern-bottom {
-  bottom: -70%;
-  right: -20%;
-}
-
 /* utilities */
 
 .mg-bot-sm {
@@ -167,18 +153,6 @@ body {
 
   .card__line {
     margin-bottom: 4rem;
-  }
-
-  .pattern-top {
-    top: -30%;
-    left: -100%;
-    transform: scale(2);
-  }
-
-  .pattern-bottom {
-    bottom: -35%;
-    right: -80%;
-    transform: scale(2);
   }
 }
 
